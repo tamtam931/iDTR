@@ -1,0 +1,120 @@
+/*
+	Added: Custom Styles For FLI-Time Record
+	Date: June 13, 2019
+	Author: Ben Zarmaynine E. Obra
+*/
+
+.dtr-panel{
+
+    border: solid 2px;
+}
+
+.main-body{
+
+    padding-top: 20px;
+}
+.loader-container{
+	display: inline-block;
+	padding-left: 1%;
+}
+#preloader_1{
+	position: relative;
+}
+#preloader_1 span{
+	display: block;
+	bottom: 9px;
+	width: 9px;
+	height: 5px;
+	background: #9b59b6;
+	position: absolute;
+	animation: preloader_1 1.5s infinite ease-in-out;
+}                
+#preloader_1 span:nth-child(2){
+	left:11px;
+	animation-delay: 2s
+}
+#preloader_1 span:nth-child(3){
+	left: 22px;
+	animation-delay: 4s
+}
+#preloader_1 span:nth-child(4){
+	left: 33px;
+	animation-delay: 6s;   
+}
+#preloader_1 span:nth-child(5){
+	left: 44px;
+	animation-delay: 8s;                      
+}
+
+.progress {
+    display: block;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background: #0085ff;
+    transition: width .3s;
+}
+.hide {
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+@keyframes preloader_1{
+	0%{height: 5px;transform: translateY(0px);background: #00accd;}
+	25%{height: 30px;transform: translateY(15px);background: #f8f400;}
+	50%{height: 5px;transform: translateY(0px);background: #00accd;}
+	100%{height: 5px;transform: translateY(0px);background: #00accd;}
+}
+
+#loading-overlay {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    background-color: #000;
+    z-index: 999;
+    opacity: 0.5;
+}
+
+.loading-icon{ 
+    position:absolute;
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    border-left:2px solid #767676;
+    border-radius:25px;
+    width:25px;
+    height:25px;
+    margin:0 auto;
+    position:
+    absolute;
+    left:50%;
+    margin-left:-20px;
+    top:50%;
+    margin-top:-20px;
+    z-index:4;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+
+@-moz-keyframes spin {
+     100% { 
+        -moz-transform: rotate(360deg); 
+    } 
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    } 
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg);
+    } 
+}
