@@ -124,4 +124,40 @@ var PostConn = function(url,data,BtnElmt=null,method="POST",BodyElmt=null){
 	return $ajaxData;
 }
 
+function TimeConv(datetime){
+
+	momentTime = 'No Time has beed found';
+
+	if (datetime) {
+
+		let momentDate = moment(datetime);
+
+		momentTime = momentDate.format('LT');
+
+	}
+
+	return momentTime;	
+
+}
+
+function DateConv(datetime){
+
+	var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	var momentDate = 'No Date has been found';
+
+	if (datetime) {
+
+		let momentDateTime = moment(datetime);
+
+		var parseDate = momentDateTime.parsingFlags();
+
+		var date = parseDate.parsedDateParts[2];
+		var month = months[parseDate.parsedDateParts[1]];
+		var year = parseDate.parsedDateParts[0];
+
+		momentDate = month+' '+date+', '+year;
+	}
+
+	return momentDate;
+}
 //End

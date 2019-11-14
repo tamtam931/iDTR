@@ -7,6 +7,7 @@
 		<script src="<?php echo base_url();?>public/js/popper.min.js"></script>
 		<script src="<?php echo base_url();?>public/js/bootstrap.min.js"></script>
 		<script src="<?php echo base_url();?>public/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 		<script src="<?php echo base_url();?>public/js/customscript.js"></script>
 		<script src="<?php echo base_url();?>public/js/DTR.js"></script>
 		<script src="<?php echo base_url();?>public/js/override.js?v=1.0.3"></script>
