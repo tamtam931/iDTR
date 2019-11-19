@@ -124,6 +124,10 @@ var PostConn = function(url,data,BtnElmt=null,method="POST",BodyElmt=null){
 	return $ajaxData;
 }
 
+/*
+	Added Moment JS version of Timeconv and DateConv
+	
+*/
 function TimeConv(datetime){
 
 	momentTime = 'No Time has beed found';
@@ -160,4 +164,5 @@ function DateConv(datetime){
 
 	return momentDate;
 }
+
 //End
